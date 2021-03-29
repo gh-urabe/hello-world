@@ -1,0 +1,1143 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*!
+ * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  text-align: inherit;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+select {
+  word-wrap: normal;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+/* end bootstrap-reboot.css */
+
+
+/*  =======================================  */
+
+body{
+	font-family: Helvetica Neue, Helvetica, Arial, roboto,  "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro,"游ゴシック Medium", Yu Gothic Medium, "游ゴシック体", YuGothic, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", MS PGothic, "sans-serif";
+	color: #404040;
+	line-height: 1.3125;
+	background-color: #fff;
+}
+
+@media (max-width:767px) {
+	.sp-hide{
+		display: none!important;
+	}
+
+}
+
+@media (min-width:768px) {
+	.pc-hide{
+		display: none!important;
+	}	
+
+}
+
+
+.v-text{
+	position: absolute;
+	z-index: -1;
+}
+
+.header-logo,
+.header-logo a{
+	
+	width: 82px;/*77px;*//*153px;*/
+	height: 62px;/*56px;*//*113px;*/
+	display: block;
+	margin: 0;
+			
+}
+
+.header-logo{
+	margin: 11px auto;
+}
+
+.header-logo a{
+	text-indent: -999px;
+	font-size: 8px;
+	background: url(../img/common/kameda_logo.png);
+	background-size: contain;
+	background-position:center top;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+@media (min-width:768px) {/*@media (min-width:835px) {*/
+	
+	#header{
+		position: absolute;
+		width: 100%;
+		
+	}
+	
+	.header-logo{
+		max-width: 1200px;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	
+	.header-logo a{
+		margin-top: 22px;
+		margin-left: 16px;
+		width: 7.3333%;/*  88px  */
+		height: 74px;/*  76px  */
+	}
+}
+
+@media (min-width:768px) and (max-width:900px) {
+	.header-logo a{
+		width: 66px;
+	}
+}
+
+
+
+/*  =============   バナー  ===========  */
+
+.banner-copy-text{
+	position: absolute;
+	z-index: -1;
+	color: rgba(108,108,108,0.00);
+}
+
+.banner-image-sp-1,
+.banner-image-pc-1{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+@media (min-width:1116px) {
+	#main-banner{
+		background: url(../img/pc/jiwa_pc_mainimg_01.jpg) no-repeat center center #543212;
+	}
+}
+
+@media (max-width:567px) {/*@media (max-width:834px)*/
+	.banner-image-pc-1{
+		display: none;
+	}
+}
+
+@media (min-width:568px) {/*@media (min-width:835px) {*/
+	
+	.banner-image-sp-1{
+		display: none;
+	}
+}
+
+
+/*    main-banner-release    */
+
+#main-banner-release{
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+#main-banner-release strong{
+	display: block;
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+/*  release-sp-1  */
+@media (max-width:567px) {/*@media (max-width:834px)*/
+	
+	#main-banner{
+		position: relative;
+	}
+	
+	#main-banner-release{
+		top: 21.401%;/*22.401%;*/
+		right: 1.833%;/*13%*/
+	}
+	
+	#main-banner-release img{
+		position: absolute;
+		top: 0;
+		right: 0;/*: 1.866%;*/
+		width: 43.466%;
+		height: auto;
+	}
+	
+	#main-banner-release img.release-sp-2{
+		right: 5%;
+		width: 30%;/*24.933%;*/
+	}
+	
+	.release-pc-2,
+	.release-pc-1{
+		display: none;
+	}
+}
+
+@media (min-width:568px) {/*@media (max-width:834px)*/
+	
+	#main-banner-release img{
+		position: absolute;
+		top: 20px;
+		right: 15px;
+		width: 25.416%;
+		height: auto;
+	}
+	
+	
+	#main-banner-release img.release-pc-2{
+		width: 15.833%;
+	}
+	
+	.release-sp-2,
+	.release-sp-1{
+		display: none;
+	}
+}
+
+@media (min-width:1200px) {
+	#main-banner-release strong{
+		width: 1200px;
+	}
+}
+
+
+
+/*  =============   メイン ( lp-main )  ===========  */
+
+
+
+.lp-main{
+	display: -ms-flexbox; /* IE10 */
+	display: -webkit-box; /* Android4.3以下、Safari3.1〜6.0 */
+	display: -webkit-flex; /* Safari6.1以降 */
+	display: flex;
+	
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: vertical;
+  	-ms-flex-direction: column;
+  	flex-direction: column;
+}
+
+
+/*  =====   Flex Order   ======  */
+
+.h3-wrap-main-copy{ order: 1;}/*flex-item-1*/
+.banner-2nd-area{ order: 3;}/*flex-item-2*/
+.section-wrap-outer{ order: 2;}/*flex-item-3*/
+.btn-bottom-wrap{ order: 4;}/*flex-item-4*/
+
+@media (max-width:767px) {/*@media (min-width:835px) {*/
+
+	.banner-2nd-area{ order: 2;}/*flex-item-2*/
+	.section-wrap-outer{ order: 3;}/*flex-item-3*/
+}
+
+/*  =====   /Flex Order END   ======  */
+
+
+/*  =============   バナー下 タイトル  ===========  */
+
+.h3-wrap-main-copy{
+	background-color: #f3ead2;	
+}
+
+@media (max-width:767px) {
+	.h3-wrap-main-copy{
+		background-color: #fff;	
+	}
+}
+
+
+.lp-main h3{
+	margin: 33px auto 53px;
+
+}
+
+
+.lp-main h3 img{
+	max-width:100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+@media (min-width:768px) {/*@media (min-width:835px) {*/
+	.lp-main h3 img{
+		/*max-width:530px;*/
+		
+	}
+}
+
+@media (max-width:767px) {/*@media (min-width:835px) {*/
+	.lp-main h3 img{
+		max-width:100%;
+	}
+	
+	.lp-main h3{
+		margin-top: 36px;
+		margin-bottom: 42px;
+	}
+}
+
+
+
+@media (min-width:768px) {
+
+	.h3-wrap-main-copy h3{
+		max-width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+
+
+@media (max-width:1020px) {
+	.h3-wrap-main-copy h3{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@media (min-width:568px) and (max-width:767px) {
+	.h3-wrap-main-copy h3{
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+}
+
+
+
+/*  =============  タイトル下 商品説明エリア===========  */
+
+
+
+.banner-2nd-area{ 
+	max-width: 980px;
+	margin: 68px auto 0;
+	position: relative;
+	/*background-color: #ddd;*/
+}
+
+.banner-2nd-area img {
+	max-width: 100%;
+	height: auto;
+	/*margin: 0 auto;
+	display: block;*/
+}
+.banner-2nd-area img.jiwa-pc-pkg{
+	margin-left: 37px;
+	/* margin: 1.875rem 15% 2.5rem 15%;
+	width: 70%; */
+}
+
+.banner-2nd-area img.jiwa-pc-copy2nd{
+	margin-right: 100px;
+	margin-top: 25px;
+	/* margin: 1.875rem 15% 2.5rem 15%;
+	width: 70%; */
+}
+
+@media (min-width:768px) {
+	
+	/*
+	.banner-2nd-area{
+		float: right;
+	}*/
+	
+	.banner-2nd-area::after{
+		content: " ";
+		height: 1px;
+		display: block;
+		clear: both;
+	}
+
+	.banner-2nd-area img.jiwa-pc-pkg{
+		/*float: right;*/
+		float: left;
+		/*width: 51.75%;
+		margin-right: -2%;*/
+	}
+	
+	.banner-2nd-area img.jiwa-pc-copy2nd{
+		float: right;
+		/*float: left;*/
+		/*width: 47%;
+		margin: 0;*/
+	}
+}
+
+.jiwa-sp-pkg,
+.jiwa-sp-copy2nd{
+	display: block;
+	margin: 0 auto;
+}
+
+.jiwa-sp-pkg{
+	width: 77%;
+}
+
+.jiwa-sp-copy2nd{
+	width: 62%;
+	margin-top: 24px;
+	margin-bottom: 30px;
+}
+
+
+
+
+@media (min-width:568px) and (max-width:920px) {
+	
+	.jiwa-pc-pkg{
+		width: 42%;
+	}
+	
+	.banner-2nd-area img.jiwa-pc-copy2nd{
+		width: 40%;
+		margin-right: 8%;
+	}
+	
+	
+}
+
+@media (min-width:568px) and (max-width:767px) {
+	/*
+	.jiwa-sp-pkg{
+		width: 66%;
+	}
+	
+	.jiwa-sp-copy2nd{
+		width: 58%;
+		
+	}*/
+	
+}
+
+
+@media (max-width:767px) {
+	
+	.banner-2nd-area{
+		margin-top: 0;
+	}
+	
+}
+
+
+@media (min-width:980px) {
+		
+	
+	.banner-2nd-area{
+		width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+
+
+
+/*  =============   SECTOPN - 1 -2-3 ===========  */
+
+.section-wrap-outer{
+	background-color: #f3ead2;
+}
+
+
+.lp-main section h4 img{
+	max-width: 100%;
+	height: auto;
+}
+
+.lp-main section h4{
+	margin-bottom: 1.375rem;
+}
+
+
+.lp-main section h4 + p{
+	margin-left: 21px;
+	font-size: 1.125rem;
+	line-height: 1.666em;
+	margin-right: .333em;
+	text-align: justify;
+}
+
+	.div-image-1 img,
+	.div-image-2 img{
+		width: 100%;
+		height: auto;
+	}
+
+@media (min-width:768px) {
+	.section-wrap{
+		max-width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.section-wrap::after{
+		content: "";
+		display: block;
+		height: 1px;
+		clear: both;
+	}
+	
+	.lp-main section{		
+		padding-bottom: 1rem;
+	}
+
+
+	
+	.section-wrap section{
+		float: right;
+		width: 50%;
+		margin-top: 38px;
+		margin-bottom: 12px;
+	}
+	
+	.section-wrap > div{
+		float: left;
+		clear: left;
+	}
+	
+	.div-image-1{
+		margin-left: 56px;
+	}
+	
+	.div-image-2{
+		margin-top: 37px;
+		margin-left: 58px;
+	}
+	
+
+}
+
+@media (min-width:768px) and (max-width:1020px) {
+	.section-wrap{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.section-wrap section{
+		width: 59%;
+		margin-top: 15px;
+	}
+	
+	.lp-main section h4{
+		margin-bottom: .675rem;/*1.375rem;*/
+	}
+	
+	.lp-main section h4 + p{
+		margin-right: 0;
+	}
+	
+	.div-image-1{
+		margin-left: 4%;
+		width: 33%;
+	}
+	
+	.div-image-2{
+		margin-left: 2%;
+		width: 33%;
+	}
+}
+
+@media (min-width:768px) and (max-width:920px) {
+	.section-wrap section{
+		/*width: 60%;*/
+	}
+}
+
+@media (min-width:768px) and (max-width:880px) {
+	.section-wrap section{
+		width: 65%;
+	}
+	
+	.div-image-1{
+		margin-left: 0px;
+	}
+}
+
+
+@media (max-width:767px) {
+	.div-image-1,
+	.div-image-2{
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+	
+	.lp-main section h4 + p{
+		margin-left: 30px;
+		margin-right: 0;
+	}
+	
+	.section-wrap section{
+		margin-top: 3rem;
+	}
+	
+	.section-wrap {
+
+		margin-bottom: 1.9rem;
+	}
+	
+}
+
+
+@media (min-width:568px) and (max-width:767px) {
+	.section-wrap{
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	
+	.div-image-1{
+		margin-left: 0;
+	}
+	
+	.lp-main section p{
+		font-size: 1.125rem;/*18px;*/
+	}
+}
+
+
+@media  (max-width:567px) {
+	.section-wrap{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.div-image-1{
+		margin-left: 0;
+	}
+	
+	
+	.lp-main section h4 + p{
+		margin-left: 0;
+	}
+
+}
+
+
+@media  (max-width:700px) {
+	*::-ms-backdrop, .section-wrap section:last-child{
+		margin-bottom: -180px;
+	}
+}
+
+@media  (max-width:628px) {
+	*::-ms-backdrop, .section-wrap section:last-child{
+		margin-bottom: -270px;
+	}
+}
+
+@media  (max-width:498px) {
+	*::-ms-backdrop, .section-wrap section:last-child{
+		margin-bottom: -330px;
+	}
+}
+
+
+/*  =============  bottom Button  ===========  */
+
+.btn-bottom-wrap{
+	margin-top: 5rem;
+}
+
+a.btn-yellow{
+	background-color: #f8d101;
+	display: block;
+	color: #505050;
+	text-align: center;
+	padding: 1em .4em;
+	text-decoration: none;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	width: 31.375rem;/*31.375*/
+}
+
+a:hover.btn-yellow{
+	background-color: #f8e47c;
+}
+
+
+@media (min-width:768px) {
+	/*.btn-bottom-wrap{
+		float: right;
+		width: 51.2%;
+	}*/
+	
+	a.btn-yellow{
+		padding: 1em .5em;
+		font-size: 1.375rem;/*22px;*/
+	}
+}
+
+@media (max-width:767px){
+	
+	a.btn-yellow{
+		width: auto;
+		margin-left: 70px;
+		margin-right: 70px;
+		font-size: 1.375rem;/*22px;*/
+	}
+	
+	.btn-bottom-wrap{
+		margin-top: 2rem;
+	}
+}
+
+@media (min-width:480px) and (max-width:567px) {
+	a.btn-yellow{
+		font-size: 1.125rem;/*18px;*/
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+
+@media (max-width:479px) {
+	a.btn-yellow{
+		font-size: 1.125rem;/*18px;*/
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@media (max-width:370px) {
+	a.btn-yellow{
+		font-size: 1rem;/*18px;*/
+	}
+}
+
+
+@media (max-width:340px) {
+	a.btn-yellow{
+		font-size: .875rem;
+	}
+}
+
+/*  =============  Footer  ===========  */
+
+.lp-footer{
+	margin-top: 2rem;
+	font-size: 0.875rem;
+	padding: 0.843rem 0 1.688rem;
+	border-top: 1px solid #666;
+	color: #666;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	line-height: 1.75;
+}
+
+.lp-footer p span{
+	display: block;
+}
+
+@media (min-width:568px) {
+	.lp-footer p span{
+		display: inline;
+	}
+}
+
+/*  =============  PAGE TOP（移植）  ===========  */
+
+.move-page-top{
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%
+}
+
+.move-page-top{
+	display: inline-block;
+	content: "";
+	background-image: url("https://www.kamedaseika.co.jp/cs/img/common/spritesheet.png");
+	/*background-image: url("../img/common/spritesheet.png");*/
+	background-repeat: no-repeat;
+	background-size: 358px 208px
+}
+
+
+
+.page-top {
+	z-index: 1000;
+	display: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.fixed #page-top-lp {
+	display: block;
+}
+
+.move-page-top {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 41px;
+	height: 45px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	opacity: 0;
+	background-position: -292px -48px
+}
+
+.fixed .move-page-top {
+	opacity: .5;
+}
+
+
+.move-page-top:active, .move-page-top:hover {
+	opacity: .8
+}
+
+@media screen and (max-width:834px) {
+.move-page-top {
+	right: 15px;
+	bottom: 25px
+}
+}
+
+
+
+/*=========== */
+
+
+
+
+
+
